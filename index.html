@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+  <link rel="icon" href="scale.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<title>Related Products</title>
+<body>
+  <div onclick="aboutTh()" id="overlay">
+    <center><div id="overlay-board"><img src="team.png" height="50%" width="50%"></img></div></center>
+  </div>
+  <div class="container">
+    <div class="header">
+    <div class="dropdown">
+       <span onclick="rp()" id="head-sp">Related Products</span>
+       <div  onmouseleave="rpd()" class="dropdown-content" id="dd">
+    <a href="#">API documentation</a>
+    <a href="#">Project Book</a>
+    <a onclick="aboutT()"href="#">About Team</a>
+  </div></div>
+    </div>
+    <div class="scroll-area">
+      <marquee onmouseleave="rpd()">Developed and Maintained by Team Lendi @ For documentation and login credentials contact admin</marquee>
+    </div>
+    <div class="content-area">
+      <div class="content-container-middle">
+        <div class="login-area">
+        <center>  <form method="post" action="search.html" class="form">
+            <input type="text" placeholder="username" name="username" id="usr">
+            <input type="password" name="password" placeholder="password" id="pwd">
+            <button class="for-sub" name="cas" onclick="return sub()">Login</button>
+          </form></center>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area">
+    &copy Designed and Maintained By Virinchi and Team.<br>
+    www.uvirinchi.com, virinchi@uvirinchi.com
+  </div>
+  </div>
+</body>
+<script>
+function rp(){
+  document.getElementById('dd').style="display:block;";
+}
+function rpd(){
+  document.getElementById('dd').style="display:none;";
+}
+function aboutT(){
+  document.getElementById('overlay').style="display:block";
+}
+function aboutTh(){
+  document.getElementById('overlay').style="display:none";
+}
+function sub(){
+  var usr=document.getElementById('usr').value;
+  var pwd=document.getElementById('pwd').value;
+  if(usr==='admin'&&pwd==='admin'){
+    return true;
+  }else{
+    alert("wrong credentials");
+    return false;
+  }
+}
+</script>
+</html>

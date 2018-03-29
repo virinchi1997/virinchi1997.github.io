@@ -1,0 +1,203 @@
+.container{
+  background-color: rgba(237, 229, 196,0.7);
+  min-height: 97vh;
+}
+
+.header{
+  background-color: black;
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  min-width: 80vh;
+  min-height: 50px;
+}
+.item-dis{
+  min-width: 80vh;
+  min-height: 22vh;
+
+}
+#menu{
+  float: left;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.ser-pro-img{
+  width: 150px;
+}
+.ser-pro-img:hover{
+  min-width: 80vh;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#overlay{
+  position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.85); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+#overlay-board{
+  font-size: 18px;
+  color: white;
+  width:80%;
+  height: 80%;
+  margin-top: 10%;
+  background-color: rgb(6,116,46);
+  border-radius: 13px;
+  border: 3px solid white;
+  font-weight: bold;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover {
+    background-color: #3e8e41;
+}
+#head-sp{
+  text-shadow: 0.2px 0.2px;
+  align-content: center;
+}
+.scroll-area{
+  min-width: 80vh;
+  min-height: 5vh;
+  background-color: rgba(244, 209, 66,0.6);
+}
+
+.footer-area{
+
+  min-width: 80vh;
+  min-height: 7vh;
+  text-align: center;
+  color: black;
+  background-color: rgba(160, 152, 122,0.6);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.content-area{
+  min-height:78vh;
+}
+
+.content-container {
+    float: left;
+    width: 24%;
+    margin-left: 1px;
+    min-height: 77vh;
+}
+.ser-pro-img{
+  width: 200px;
+}
+
+.ser-pro-img :hover{
+  width:450px;
+}
+.search-dis{
+  max-height: 68vh;
+  overflow: scroll;
+}
+.form{
+  align-content: center;
+  margin-left: 68%;
+  margin-top: 22%;
+  box-shadow: 15px 15px;
+  width: 50%;
+  height: 40%;
+  border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+}
+.form:hover{
+  align-content: center;
+  margin-left: 68%;
+  margin-top: 22%;
+  box-shadow: 25px 25px;
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+}
+input[type=text], select {
+    width: 99%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 15px;box-shadow: 10px 10px;
+    box-sizing: border-box;
+}
+input[type=text]:hover, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 15px;box-shadow: 10px 10px;
+    box-sizing: border-box;
+}
+
+.item-data{
+
+}
+.for-sub {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: rgba(244, 66, 66,0.8);
+    box-shadow: 10px 10px;
+}
+
+.for-sub:hover {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color:red;
+    box-shadow: 10px 10px;
+}
